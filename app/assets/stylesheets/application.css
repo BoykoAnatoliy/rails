@@ -1,0 +1,53 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/*@media only screen and (min-width 400px){
+  .form-control{width: 200px;}
+}*/
+
+@media only screen and (max-width: 768px) {
+  .form-control {
+    display: inline-block !important;
+    width: 80% !important;
+  }
+
+  .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-top: -5px !important;
+  }
+  .col-xs-8 {
+     float: none !important; 
+  }
+
+  .form-group{
+    margin-top: 5px !important;
+  }
+}
+
+
+.img{
+  padding: 10px;
+  border-radius: 20px;
+}
+/*
+.line { 
+    border-left: 2px solid #ccc; /* Параметры линии */ 
+    margin-left: 20px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */ 
+    height: 100%;
+   }
+/*
